@@ -15,7 +15,7 @@ class song
     @@artists<< artist
   end
 
-  def self.genre
+  def self.genres
     genre_list=[]
     @@genre.each{|genre| genre_list << genre unless genre_list.include?(genre)}
     genre_list
