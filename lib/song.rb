@@ -20,3 +20,5 @@ def self.genre
   @@genre.each{|genre| genre_list << genre unless genre_list.include?(genre)}
   genre_list
 end
+
+end
