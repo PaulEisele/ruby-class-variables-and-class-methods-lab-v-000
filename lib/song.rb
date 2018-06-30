@@ -17,7 +17,7 @@ class song
 
   def self.genres
     genre_list=[]
-    @@genre.each{|genre| genre_list << genre unless genre_list.include?(genre)}
+    @@genres.each{|genre| genre_list << genre unless genre_list.include?(genre)}
     genre_list
   end
 
