@@ -1,25 +1,21 @@
-class song 
+class song
 
   attr_accessor :name, :artist, :genre
 
   @@count=0
-  @@genre=[]
-  @@artist=[]
+  @@genres=[]
+  @@artists=[]
 
   def initialize
-    count += 1
+    @@count += 1
+    @genre = genre
+    @artist = artist
+    @name = name
+    @@genres<< genre
+    @@artists<< artist
   end
 
-  def self.count
-    @@count
-  end
-
-  def count=(count)
-    @count = count
-  end
-
-  def count
-    @count
-  end
-
+def self.genre
+  genre_list=[]
+  @@genre.each{|genre| genre_list << genre unless genre_list.include?(genre)}
 end
